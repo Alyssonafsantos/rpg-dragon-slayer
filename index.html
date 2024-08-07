@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG - Dragon Slayer
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <video src="assets/videos/fightdragon.mp4" id="dragon" alt="Monster Dragon" class="game__image fullfill" width="100%" type="video/mp4" autoplay></video>
+  <video src="assets/videos/videoshop.mp4" id="shop" alt="shop" class="game__image fullfill" width="100%" type="video/mp4" autoplay></video>
+  <video src="assets/videos/youdie.mp4" id="die" alt="altar" class="game__image fullfill" width="100%" type="video/mp4" autoplay></video>
+  <video src="assets/videos/youwin.mp4" id="dragonsdeath" alt="dragon's death" class="game__image fullfill" width="100%" type="video/mp4" autoplay></video>
+  <img src="assets/image/square.png" id="square" alt="square" class="game__image fullfill" width="100%">
+  <img src="assets/image/cave.png" id="cave" alt="cave" class="game__image fullfill"  width="100%">
+  <img src="assets/image/battlefield.png" id="battlefield" class="game__image fullfill" width="100%">
+  <div class="game__monsters">
+    <img src="assets/image/imageslime.png" id="slime" alt="Monster slime" class="game__image monster1">
+    <img src="assets/image/imagebeast.png" id="beast" alt="Monster Minotauro" class="game__image monster2">
+    <img src="assets/image/skeleton.png" id="skeleton" alt="Monster Skeleton" class="game__image monster3">
+  </div>
+    <div id="game" class="game">
+        <div id="stats" class="game__stats">
+          <span class="stat">XP: <strong><span id="xpText">0</span></strong></span>
+          <span class="stat">Health: <strong><span id="healthText">100</span></strong></span>
+          <span class="stat">Gold: <strong><span id="goldText">50</span></strong></span>
+          <span class="stat">Magic: <strong><span id="magicText">100</span></strong></span>
+        </div>
+        <div id="controls" class="game__controls">
+          <button class="button1" id="button1">Go to store</button>
+          <button class="button2" id="button2">Go to cave</button>
+          <button class="button3" id="button3">Fight dragon</button>
+          <button class="button4" id="button4"></button>
+        </div>
+        <div id="monsterStats" class="game__monsterStats">
+          <span class="stat">Monster Name: <strong><span id="monsterName"></span></strong></span>
+          <span class="stat">Health: <strong><span id="monsterHealth"></span></strong></span>
+        </div>
+        <div id="text" class="game__text game__textbattle">
+          Welcome to Dragon Repeller. You must defeat the dragon that is preventing people from leaving the town. You are in the town square. Where do you want to go? Use the buttons above.
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>

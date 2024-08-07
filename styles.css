@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+body {
+    background-color: #0a0a23;
+  }
+img{
+  display: none;
+  }
+  
+.game__text {
+    background-color: #0a0a23;
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+.game {
+    max-width: 500px;
+    max-height: 400px;
+    background-color: #ffffff;
+    color: #ffffff;
+    margin: 30px auto 0px;
+    padding: 10px;
+  }
+  
+.game__controls,
+.game__stats {
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #0a0a23;
+  }
+  
+.game__monsterStats {
+    display: none;
+    border: 1px solid #0a0a23;
+    padding: 5px;
+    color: #ffffff;
+    background-color: #c70d0d;
+  }
+  
+.stat {
+    padding-right: 10px;
+  }
+  
+button {
+    cursor: pointer;
+    color: #0a0a23;
+    background-color: #feac32;
+    background-image: linear-gradient(#fecc4c, #ffac33);
+    border: 3px solid #feac32;
+  }
+.button4{
+    display: none;
+    grid-column: 1/4;
+  }
+  
+.game__controls{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 0.2rem;
+  }
+
+  @media screen and (max-width: 700px) {
+    html{
+      height:95vh;
+    }
+    
+    body {
+      height: 100vh;
+    }
+    
+    .game__text {
+      grid-row: 5/6;
+      font-size: 1.3rem;
+      position: relative;
+    }
+    
+    .game {
+      max-height: 700px;
+      max-width: 700px;
+      height:100%;
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: 6% 12% 50% 6% 26%;
+      margin: 0px;
+    }
+  
+    .game__monsterStats {
+      display: none;
+      grid-row: 4/5;
+      position: absolute;
+      bottom:16.5%;
+      width: 95%;
+    }
+  
+    .button4{
+      display: none;
+      grid-column: 1/4;
+    }
+  
+    .game__controls{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      gap: 0.2rem;
+      position: relative;
+      background-color: beige;
+    }
+
+    .buttonrestart{
+      display: block;
+      grid-column: 1/4;
+    }
+
+    .game__stats {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: beige;
+    }
+
+    .game__image{
+      position:absolute;
+      display: block;
+      overflow: hidden;
+    }
+
+    video{
+      object-fit: cover;
+    }
+
+    .monster1{
+      bottom:22%;
+      left:10%;
+      height: 20vh;
+
+    }
+
+    .monster2{
+      bottom:34%;
+      left: 70%;
+      height: 23vh;
+    }
+
+    .monster3{
+      bottom: 59.5%;
+      right:70%;
+      height: 17vh;
+    }
+
+    .fullfill{
+      height: 100%;
+    }
+
+    .monster1battlein{
+      top:52%;
+      left:16%;
+      height: 48%;
+    }
+
+    .monster2battlein{
+      top:45%;
+      left:33%;
+      height: 49%;
+    }
+
+    .monster3battlein{
+      top:45%;
+      left:33%;
+      height: 45%;
+    }
+    .game__textin{
+      font-size: 1.3rem;
+      position: absolute;
+      height: 6rem;
+      bottom: 2%;
+      width:95%;
+      background-color: #0a0a2394;
+    }
+    .hidden{
+      opacity: 0;
+      transition: opacity 1s;
+      position: absolute;
+    }
+    .visible{
+      opacity: 1;
+      transition: opacity 1s;
+      position: absolute;
+    }
+  }
